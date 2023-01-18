@@ -175,7 +175,7 @@ func compareResults(writer http.ResponseWriter, request *http.Request) {
 	}
 }
  func htmlReport(w http.ResponseWriter, r *http.Request) {
-
+    log.Println("html report inside ")
 	p := "./" + r.URL.Path
 	http.ServeFile(w, r, p)
 
