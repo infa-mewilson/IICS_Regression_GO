@@ -174,3 +174,9 @@ func compareResults(writer http.ResponseWriter, request *http.Request) {
 		log.Println("totalAPIs are ", total, "improvement >0%", green, "degraded 0-20%", yellow, "degraded >20%", red, "NelyAdded", newApiCount)
 	}
 }
+ func htmlReport(w http.ResponseWriter, r *http.Request) {
+
+	p := "./" + r.URL.Path
+	http.ServeFile(w, r, p)
+
+}
