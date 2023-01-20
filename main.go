@@ -8,6 +8,6 @@ import (
 
 func main() {
 	apmservice.Init()
-	log.Println("Starting server on port 6666")
-	log.Println(http.ListenAndServe(":6666", nil))
+	log.Println("Starting server on port 4048")
+	log.Println(http.ListenAndServe(":4048", nil))
 }
